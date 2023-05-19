@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-12T09:07:51 IST" name="Default suite" finished-at="2023-05-12T09:08:39 IST" duration-ms="47043">
+    <groups>
+    </groups>
+    <test started-at="2023-05-12T09:07:51 IST" name="Default test" finished-at="2023-05-12T09:08:39 IST" duration-ms="47043">
+      <class name="testCases.DealsPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.DealsPageTest@156b88f5]" started-at="2023-05-12T09:07:52 IST" name="setUp" finished-at="2023-05-12T09:08:01 IST" duration-ms="9328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createDeal(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DealsPageTest@156b88f5]" started-at="2023-05-12T09:08:01 IST" name="createDeal" data-provider="cogmentoData" finished-at="2023-05-12T09:08:15 IST" duration-ms="13542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kiran.masterx@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[New Deal]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[MasterX]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ram ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDeal -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DealsPageTest@156b88f5]" started-at="2023-05-12T09:08:15 IST" name="tearDown" finished-at="2023-05-12T09:08:15 IST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.DealsPageTest@156b88f5]" started-at="2023-05-12T09:08:15 IST" name="setUp" finished-at="2023-05-12T09:08:24 IST" duration-ms="8731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createDeal(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DealsPageTest@156b88f5]" started-at="2023-05-12T09:08:24 IST" name="createDeal" data-provider="cogmentoData" finished-at="2023-05-12T09:08:38 IST" duration-ms="14030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kiran.masterx@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Deal @123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[TCS]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Shyam]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDeal -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DealsPageTest@156b88f5]" started-at="2023-05-12T09:08:38 IST" name="tearDown" finished-at="2023-05-12T09:08:38 IST" duration-ms="307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.DealsPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

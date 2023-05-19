@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">69,365</td><td></td><td>new</td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testCases.DealsPageTest</td><td><a href="#m0">getResult</a></td><td rowspan="1">1684290340560</td><td rowspan="1">3</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.LoginPageTest</td><td><a href="#m1">verifyForgotPasswordLinkWorking</a></td><td rowspan="1">1684290375694</td><td rowspan="1">3141</td></tr><tr class="failedodd"><td rowspan="1">testCases.LognTestWithExcel</td><td><a href="#m2">login</a></td><td rowspan="1">1684290311178</td><td rowspan="1">1255</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">testCases.DealsPageTest</td><td><a href="#m3">getResult</a></td><td rowspan="1">1684290340611</td><td rowspan="1">-1684290340611</td></tr><tr class="skippedeven"><td><a href="#m4">setUp</a></td><td rowspan="1">1684290340585</td><td rowspan="1">-1684290340585</td></tr><tr class="skippedeven"><td><a href="#m5">tearDown</a></td><td rowspan="1">1684290340602</td><td rowspan="1">-1684290340602</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testCases.DealsPageTest</td><td><a href="#m6">createDeal</a></td><td rowspan="1">1684290340594</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.DealsPageTest</td><td><a href="#m7">createDeal</a></td><td rowspan="1">1684290325610</td><td rowspan="1">14233</td></tr><tr class="passedodd"><td rowspan="2">testCases.LoginPageTest</td><td><a href="#m8">verifyForgotPasswordLinkDisplayed</a></td><td rowspan="1">1684290365985</td><td rowspan="1">183</td></tr><tr class="passedodd"><td><a href="#m9">verifyLoginSuccessful</a></td><td rowspan="1">1684290351359</td><td rowspan="1">3760</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">testCases.DealsPageTest#getResult</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=createDeal status=SUCCESS method=DealsPageTest.createDeal(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DealsPageTest@428640fa] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;base.BasePage.test&quot; is null
+	at base.BasePage.getResult(BasePage.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.LoginPageTest#verifyForgotPasswordLinkWorking</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError
+	at pageObjects.ForgotPasswordPage.verifyforgotMyPasswordHeading(ForgotPasswordPage.java:21)
+	at testCases.LoginPageTest.verifyForgotPasswordLinkWorking(LoginPageTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.LognTestWithExcel#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.reflect.MethodMatcherException: 
+[public void testCases.LognTestWithExcel.login(java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: login([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) kiran.masterx@gmail.com,(java.lang.String) Test@123,(java.lang.String) New Deal,(java.lang.String) MasterX,(java.lang.String) Ram ]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testCases.DealsPageTest#getResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testCases.DealsPageTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testCases.DealsPageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testCases.DealsPageTest#createDeal</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>kiran.masterx@gmail.com</td><td>Test@123</td><td>Deal @123</td><td>TCS</td><td>Shyam</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;base.BasePage.test&quot; is null
+	at base.BasePage.getResult(BasePage.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testCases.DealsPageTest#createDeal</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>kiran.masterx@gmail.com</td><td>Test@123</td><td>New Deal</td><td>MasterX</td><td>Ram </td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testCases.LoginPageTest#verifyForgotPasswordLinkDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testCases.LoginPageTest#verifyLoginSuccessful</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

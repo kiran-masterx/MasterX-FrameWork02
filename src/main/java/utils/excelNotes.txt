@@ -1,0 +1,43 @@
+# Reading data from excel
+
+1. Dependencies : apache poi
+ -> https://mvnrepository.com/
+ <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>5.2.3</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>5.2.3</version>
+		</dependency>
+		
+		
+		
+Before Suite, Test, Class, Method 
+		Test
+After Suite, Test, Class, Method 
+
+
+//testng.xml
+-> To handle and create multiple test classes we can use testng.xml file. 
+-> We do configure our test run, set test dependency, include or exclude test classes / methods, etc. 
+-> It is used to run and manage our test classes. 
+
+
+//StaleElementRefrenceException: 
+-> Stale means old, decayed, no longer fresh or no longer available. 
+-> If the DOM changes then the webelement goes stale. 
+-> If we try to interact with such element then we will get StaleElementRefrenceException. 
+-> Causes: -> The webelement deleted from the webpage. 
+           -> The reference element is no longer attached to the DOM. 
+-> Solutions: 1. Refresh the webpage. 
+			  2. Using try catch block.
+			  3. Using expectedConditions and using retry logic. 
+		
+
+ 
