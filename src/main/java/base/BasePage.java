@@ -54,8 +54,9 @@ public class BasePage {
 	public BasePage() {
 		try {
 			prop = new Properties();
-			FileInputStream fis = new FileInputStream(
-					"C:\\Users\\Lenovo\\eclipse-workspace\\TestNgFramework_MasterX\\src\\main\\java\\config\\config.properties");
+//			FileInputStream fis = new FileInputStream(
+//					"C:\\Users\\Lenovo\\eclipse-workspace\\TestNgFramework_MasterX\\src\\main\\java\\config\\config.properties");
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+ "\\TestNgFramework_MasterX\\src\\main\\java\\config\\config.properties");
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
 			System.out.println(e.getStackTrace());
@@ -69,8 +70,7 @@ public class BasePage {
 		// The above line is to read the value of a key passed from properties file.
 
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\Lenovo\\Downloads\\chromedriver_win32 (7)\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\TestNgFramework_MasterX\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
@@ -90,7 +90,7 @@ public class BasePage {
 	@BeforeTest
 	public void startReport() {
 		htmlReporter = new ExtentHtmlReporter(
-				"C:\\Users\\Lenovo\\eclipse-workspace\\TestNgFramework_MasterX\\ExtentReport\\extentReport.html");
+				System.getProperty("user.dir") + "\\TestNgFramework_MasterX\\ExtentReport\\extentReport.html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 		htmlReporter.config().setDocumentTitle("Test Automation Report");
@@ -126,16 +126,18 @@ public class BasePage {
 
 	public static String captureScreenshots(String screenShotName) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
-		// TakeScreenshot is an interface which is used to take the screenshots in test automation
+		// TakeScreenshot is an interface which is used to take the screenshots in test
+		// automation
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		// OutputType.FILE -> Storing a screenshot at temporary file
-		String dest = "C:\\Users\\Lenovo\\eclipse-workspace\\TestNgFramework_MasterX\\ExtentReport\\" + screenShotName
+		String dest = System.getProperty("user.dir") + "\\TestNgFramework_MasterX\\ExtentReport\\" + screenShotName
 				+ ".png";
-		//We have to store the screenshot in permanent location
-		File destination = new File (dest);
-		
+		// We have to store the screenshot in permanent location
+		File destination = new File(dest);
+
 		FileUtils.copyFile(source, destination);
-		//We are copying the file from temporary location (source) to permanent location (destination)
+		// We are copying the file from temporary location (source) to permanent
+		// location (destination)
 		return dest;
 
 	}
